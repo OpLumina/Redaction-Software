@@ -48,4 +48,4 @@ cm.stupak@gmail.com
 * THIS CODE IS A PERSONAL PROJECT FOR A PERSONAL GOAL, IF YOU PLAN TO USE THIS CODE IN A PRODUCTION ENVIRONMENT, PLEASE DO YOUR OWN SECURITY AUDITING PRIOR TO DEPLOYMENT. THIS CODE HANDLES FILE FORMATS THAT COULD POTENTIALLY EXECUTE MALICIOUS JAVASCRIPT OR OTHER MALICIOUS CODE. DO NOT USE THIS CODE TO VIEW FILES YOU DO NOT TRUST. Eventually it will be to the point where I do a security audit and pentest it, as of now it is not to that point.
 * Although I have tested the burn-in feature with various redaction-auditing softwares, I cannot gaurentee the effectiveness of this software for redaction. Please independently test your redactions prior to releasing any sensitive information
 * This code was assisted by various AI models (Claude, ChatGPT, Qwen 3.5 and Gemini).
-* File types that are able to be parsed so far (Contrary to what the frontend says): PDF, JPG, PNG, These are the ones I've been able to actually get working.
+* File types that are able to be redacted so far (Contrary to what the frontend says): PDF, JPG, PNG, These are the ones I've been able to actually get working.
