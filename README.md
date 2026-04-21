@@ -50,7 +50,5 @@ Open http://localhost:3000
 cm.stupak@gmail.com
 
 ## Disclaimers
-* Please do your own auditing of dependencies and code security prior to using this in a production environment.
+* THIS CODE IS A PERSONAL PROJECT FOR A PERSONAL GOAL, IF YOU PLAN TO USE THIS CODE IN A PRODUCTION ENVIRONMENT, PLEASE DO YOUR OWN SECURITY AUDITING PRIOR TO DEPLOYMENT. THIS CODE HANDLES FILE FORMATS THAT COULD POTENTIALLY EXECUTE MALICIOUS JAVASCRIPT OR OTHER MALICIOUS CODE. DO NOT USE THIS CODE TO VIEW FILES YOU DO NOT TRUST. Eventually it will be to the point where I do a security audit and pentest it, as of now it is not to that point.
 * This code was assisted by various AI models (Claude, ChatGPT, Qwen 3.5 and Gemini). 
-* This script handles various file formats that could potentially execute malicious javascript and other scripts. Do not use this tool on files you do not trust prior to opening. This is a personal project for a personal goal, eventually it will be to the point where I do a security audit and pentest it, as of now it is not to that point.
-##Disclaimers
