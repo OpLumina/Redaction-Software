@@ -13,15 +13,9 @@ Locally ran Redaction Software, runs in a docker container for easy deployment. 
 
 ### Docker (recommended)
 ```bash
-mkdir -p volumes/in-progress
 docker compose up --build
 ```
 
-### Local dev
-```bash
-bash setup.sh
-npm run dev
-```
 
 Open http://localhost:3000
 
@@ -45,6 +39,7 @@ Open http://localhost:3000
 ## Known Bugs
 * When exporting files over ~245 Pages starts to destroy certain parts of the export when burning the redactions into the file
 * File uploads are unavailable for non-localhost connections (like direct IP access instead of 127.0.0.1), which needs to be fixed if running on a server. Will update with a toggle to add port access to other people on LAN as well eventually
+* Local Development tools are a bit finicky, the docker container is working better for me.
 
 ## Reporting Security Vulnerabilities
 cm.stupak@gmail.com
