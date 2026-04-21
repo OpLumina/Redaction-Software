@@ -1,0 +1,61 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+      # Tell BuildKit to reuse the previous image's layers as a cache source.
+      # On rebuild, unchanged layers (apt, npm install, Next.js build) are
+      # pulled from the local cache instead of re-executed.
+      cache_from:
+        - type=local,src=.docker-cache
+      cache_to:
+        - type=local,dest=.docker-cache,mode=max
+    container_name: redact-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - HOSTNAME=0.0.0.0
+      - NODE_OPTIONS=--max-old-space-size=4096
+    volumes:
+      - in_progress_data:/data/in-progress
+    networks:
+      - redact-internal
+
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    container_name: redact-app-dev
+    profiles:
+      - dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+      - in_progress_data:/data/in-progress
+    command: npm run dev
+    networks:
+      - redact-internal
+
+volumes:
+  in_progress_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./volumes/in-progress
+
+networks:
+  redact-internal:
+    driver: bridge
+    internal: false
