@@ -1,6 +1,6 @@
 # Redact
 
-Local-first document redaction. Nothing leaves your machine.
+Local Vibe-Coded Redaction Software, runs in a docker container for easy deployment. Uses Tesseract OCR for searching and mass-redaction
 
 ## Supported formats
 
