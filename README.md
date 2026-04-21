@@ -50,7 +50,7 @@ Open http://localhost:3000
 cm.stupak@gmail.com
 
 ## Disclaimers
-Please do your own auditing of dependencies and code security prior to using this in a production environment.
-This code was assisted by various AI models (Claude, ChatGPT, Qwen 3.5 and Gemini). 
-This script handles various file formats that could potentially execute malicious javascript and other scripts. Do not use this tool on files you do not trust prior to opening. This is a personal project for a personal goal, eventually it will be to the point where I do a security audit and pentest it, as of now it is not to that point.
+* Please do your own auditing of dependencies and code security prior to using this in a production environment.
+* This code was assisted by various AI models (Claude, ChatGPT, Qwen 3.5 and Gemini). 
+* This script handles various file formats that could potentially execute malicious javascript and other scripts. Do not use this tool on files you do not trust prior to opening. This is a personal project for a personal goal, eventually it will be to the point where I do a security audit and pentest it, as of now it is not to that point.
 ##Disclaimers
